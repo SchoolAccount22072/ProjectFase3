@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: white;
+}
+
+.top-frame {
+    background-color: green;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.title-text {
+    color: white;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow the title to grow and take available space */
+    padding-top: 10px;
+}
+
+.title-text img {
+    max-height: 150px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.profile-link {
+    /* No need for align-items here */
+}
+
+.profile-icon {
+    height: 65px;
+    width: 65px;
+    /* Add margin if needed */
+}
+
+.content-frame {
+    padding: 20px;
+    /* Rest of the content styles */
+}
+
+.bottom-frame {
+    background-color: green;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* Rest of the bottom frame styles */
+}
+
+@media screen and (max-width: 768px) {
+    .title-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-text {
+        font-size: 18px;
+    }
+    .top-frame {
+        height: 40px;
+    }
+    .profile-icon {
+        height: 35px;
+        width: 35px;
+    }
+}

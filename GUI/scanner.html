@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+</head>
+<body>
+
+<div class="top-frame">
+    <span class="title-text">
+        <a href="gui.html">
+            <img src="logo school.png" ></a>
+    </span>
+    <a href="login.html" class="profile-link">
+        <img src="placeholder_icon.png" alt="Login" class="profile-icon">
+    </a>
+</div>
+
+<div class="content-frame">
+    <h1>Product Scannen</h1>
+    <div id="barcode-scanner">
+        <video id="barcode-scanner-video" width="100%" autoplay></video>
+    </div>
+    <button onclick="startScanner()">Start Scanner</button>
+    <div id="productDescription"></div>
+</div>
+
+<div class="bottom-frame">
+<!-- CAMERA ICON ETC TOEVOEGEN!!! -->
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

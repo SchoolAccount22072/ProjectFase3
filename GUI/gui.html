@@ -10,7 +10,7 @@
 
 <div class="top-frame">
     <span class="title-text">
-        <a href="gui.html">
+        <a href="assistant.html">
             <img src="logo school.png" ></a>
     </span>
     <a href="login.html" class="profile-link">
@@ -21,18 +21,23 @@
 
 <div class="content-frame">
     <h1>Home</h1>
-    <img src="reclame.png", height= "270px", width="480px", >
-    <h2 class="content-text">Mijn Koelkast: </h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quaerat ea quod in error, voluptas autem repellat aperiam id iste magni harum beatae omnis architecto sapiente quae! Porro, esse commodi.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quaerat ea quod in error, voluptas autem repellat aperiam id iste magni harum beatae omnis architecto sapiente quae! Porro, esse commodi.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quaerat ea quod in error, voluptas autem repellat aperiam id iste magni harum beatae omnis architecto sapiente quae! Porro, esse commodi.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quaerat ea quod in error, voluptas autem repellat aperiam id iste magni harum beatae omnis architecto sapiente quae! Porro, esse commodi.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quaerat ea quod in error, voluptas autem repellat aperiam id iste magni harum beatae omnis architecto sapiente quae! Porro, esse commodi.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quaerat ea quod in error, voluptas autem repellat aperiam id iste magni harum beatae omnis architecto sapiente quae! Porro, esse commodi.</p>
+    <img src="reclame.png" height="270px" width="480px">
+    <h2 class="content-text">Mijn Koelkast:</h2>
+    <ul id="productList">
+        <!-- Product list items will be added here by JavaScript -->
+    </ul>
+    <input type="text" id="productInput" placeholder="Voer de naam van het product in">
+    <input type="date" id="dateInput" placeholder="Voer de datum in">
+    <button onclick="addProductWithDate()">Product met datum toevoegen</button>
+    <div id="barcode-scanner"></div>
 </div>
 
+
+
 <div class="bottom-frame">
-    <!-- Bottom frame content goes here -->
+
+    <a href="scanner.html" class="profile-link">
+        <img src="placeholder_icon2.png" alt="Login" class="profile-icon">
 </div>
 
 <script src="script.js"></script>
